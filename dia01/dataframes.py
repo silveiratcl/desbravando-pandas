@@ -1,5 +1,6 @@
 # %%
 import pandas as pd
+
 # %%
 
 data = {
@@ -15,15 +16,20 @@ data["idade"][0]
 df = pd.DataFrame(data)
 df
 #%%
+# df idade chamou a coluna  e iloc a posição 0
+# cada coluna é uma série, data frame é um conjunto de séries
 df["idade"].iloc[0]
 
 # %%
 df['sobrenome'].iloc[0]
 
 # %%
+# acessando a posição extraindo uma série
+# os índices são os nomes das colunas correspondentes
 df.iloc[0]
 
 # %%
+# Data frame (PLANILHA) é um conjunto de SERIES(COLUNA)
 df['idade']
 
 # %%
@@ -31,12 +37,15 @@ df['idade']
 df.index=[3,2,1,0]
 df
 # %%
+# ACESSOU O INDICE
 df["idade"][0]
 
 # %%
+# Indices
 df.index
 
 # %%
+# nomes das colunas # somente para data frame
 df.columns
 
 # %%
@@ -49,8 +58,10 @@ df.dtypes
 
 df['peso'] = [80, 53, 65, 14]
 
+# %%
 sumario = df.describe()
-
+sumario
+# %%
 sumario['peso']['mean']
 
 # %%
