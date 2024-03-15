@@ -125,5 +125,6 @@ rfv(1,100,2) # ok funciona
 
 # %%
 
-df_crm.apply([])
+df_crm["RFV"] = df_crm.apply(rfv, axis=1) ### eixo axis 1 pegando o idica
+df_crm
 # %%
