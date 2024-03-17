@@ -13,6 +13,7 @@ data = {
 data["idade"][0]
 
 # %%
+# convertendo em pandas
 df = pd.DataFrame(data)
 df
 #%%
@@ -33,7 +34,7 @@ df.iloc[0]
 df['idade']
 
 # %%
-
+# indice é a posição, neste caso ordenamos o df pelos indices fornecidos
 df.index=[3,2,1,0]
 df
 # %%
@@ -69,3 +70,4 @@ df.head(2)
 
 # %%
 df.tail(2)
+# %%

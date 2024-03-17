@@ -118,7 +118,7 @@ def rfv(row):
     return nota
 
 # %%
-rfv(1,100,2) # ok funciona
+rfv(1,100,2) # ok funciona sem row no indice da coluna
 # %%
 
 
